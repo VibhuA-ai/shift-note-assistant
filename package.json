@@ -1,0 +1,12 @@
+{
+  "name": "practice-round",
+  "version": "1.0.0",
+  "description": "A safe first try at AI for recuperative care LVNs and medical assistants: turn shift jottings for made-up clients into a checked draft note.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node --test test/*.test.js"
+  }
+}

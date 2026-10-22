@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice Round</title>
+  <meta name="description" content="A safe first try at AI for recuperative care LVNs and medical assistants. Made-up clients only.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-go="home" aria-label="Practice Round home">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="5" y="4" width="22" height="25" rx="3" fill="none" stroke="currentColor" stroke-width="2.4"/><rect x="11" y="2" width="10" height="5" rx="1.5" fill="currentColor"/><path d="M10 17l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Practice Round</span>
+    </a>
+    <span id="mode" class="mode" title="">Checking…</span>
+  </header>
+
+  <div class="practice-banner" role="note">
+    Practice only. Every client here is made up. Do not type real client information.
+  </div>
+
+  <ol class="steps" id="steps" aria-label="Progress">
+    <li data-step="pick">1. Pick a client</li>
+    <li data-step="jot">2. Your jottings</li>
+    <li data-step="review">3. Check the draft</li>
+    <li data-step="note">4. Your note</li>
+  </ol>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="foot">
+    Built for Illumination Health + Home staff at the Orange County Claude Impact Lab.
+    A prototype. It does not connect to any IHH system and saves nothing.
+    <a href="https://github.com/VibhuA-ai/practice-round">Source</a>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
