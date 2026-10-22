@@ -73,7 +73,7 @@ function renderHome() {
     <div class="cards three">
       <article class="card">
         <h3>"Will a client's information end up somewhere it shouldn't?"</h3>
-        <p>Not here. Practice Round uses made-up clients only, and it <strong>blocks names, birth dates, phone numbers, addresses and record numbers</strong> before anything is sent. Nothing is stored.</p>
+        <p>Not here. ShiftScribe uses made-up clients only, and it <strong>blocks names, birth dates, phone numbers, addresses and record numbers</strong> before anything is sent. Nothing is stored.</p>
         <p class="muted small">For real clients, use only the tools IHH has approved. Ask your supervisor which ones.</p>
       </article>
       <article class="card">
@@ -153,7 +153,7 @@ function renderJot() {
         ${isSample() ? '' : '<button class="link" data-action="reset-sample">Put the sample back</button>'}
       </div>
       <div id="guard">${guardHtml}</div>
-      ${demoLocked ? `<div class="guard info">Demo mode drafts the sample jottings only. To draft your own words, run Practice Round with an API key (see the README). <button class="link" data-action="reset-sample">Use the sample</button></div>` : ''}
+      ${demoLocked ? `<div class="guard info">Demo mode drafts the sample jottings only. To draft your own words, run ShiftScribe with an API key (see the README). <button class="link" data-action="reset-sample">Use the sample</button></div>` : ''}
       ${state.error ? `<div class="guard block" role="alert">${esc(state.error)}</div>` : ''}
       <button class="btn primary big" data-action="draft" ${canDraft ? '' : 'disabled'}>
         ${state.loading ? '<span class="spinner" aria-hidden="true"></span> Drafting… usually under 20 seconds' : 'Draft my note'}

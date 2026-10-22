@@ -1,5 +1,5 @@
 {
-  "name": "practice-round",
+  "name": "shiftscribe",
   "version": "1.0.0",
   "description": "A safe first try at AI for recuperative care LVNs and medical assistants: turn shift jottings for made-up clients into a checked draft note.",
   "type": "module",

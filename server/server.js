@@ -1,4 +1,4 @@
-// Practice Round server. No dependencies: Node 18+ only.
+// ShiftScribe server. No dependencies: Node 18+ only.
 //   - Serves the web app from /public
 //   - POST /api/draft asks Claude for a draft note (needs ANTHROPIC_API_KEY)
 //   - Nothing is stored. No database, no logs of jottings or notes.
@@ -133,14 +133,14 @@ const server = http.createServer(async (req, res) => {
     send(res, 200, content, TYPES[path.extname(file)] || 'application/octet-stream');
   } catch (err) {
     // Log the error type only. Never log jottings or drafts.
-    console.error(`[practice-round] ${err.message}`);
+    console.error(`[shiftscribe] ${err.message}`);
     send(res, err.status || 500, { error: err.status === 502 ? 'The AI service had a problem. Try again, or use a demo draft.' : err.message });
   }
 });
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   server.listen(PORT, () => {
-    console.log(`Practice Round running at http://localhost:${PORT}`);
+    console.log(`ShiftScribe running at http://localhost:${PORT}`);
     console.log(process.env.ANTHROPIC_API_KEY ? `Live drafting on (${MODEL}).` : 'No ANTHROPIC_API_KEY: demo drafts only.');
   });
 }

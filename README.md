@@ -1,9 +1,9 @@
-# Practice Round
+# ShiftScribe
 
 > For LVNs and medical assistants in recuperative care: a two-minute, safe first try at AI, turning
 > your shift jottings for a made-up client into a draft note you check line by line.
 
-**Try it now (demo mode, no install):** https://vibhua-ai.github.io/practice-round/
+**Try it now (demo mode, no install):** https://vibhua-ai.github.io/shiftscribe/
 
 **Challenge:** 3, Make AI approachable
 **Built for:** Orange County | Claude Impact Lab (October 17, 2026), with Illumination Health + Home.
@@ -22,7 +22,7 @@ note with their name on it saying something that didn't happen, and about their 
 
 ## What we built
 
-Practice Round is the moment the challenge asks for: a staff member sees AI do something useful
+ShiftScribe is the moment the challenge asks for: a staff member sees AI do something useful
 with their own kind of work, and stays in control the whole time.
 
 1. **Pick a made-up client.** Three practice clients (Bed 3, Bed 7, Bed 12), each with care plan
@@ -73,7 +73,7 @@ what happened on the shift.
 
 ## Try it
 
-**No install:** open https://vibhua-ai.github.io/practice-round/. With no AI connection it runs in
+**No install:** open https://vibhua-ai.github.io/shiftscribe/. With no AI connection it runs in
 **demo mode**: saved example drafts of the sample jottings, with mistakes left in on purpose so you
 can see the checker work. Everything else is the same.
 
@@ -81,8 +81,8 @@ can see the checker work. Everything else is the same.
 else to install):
 
 ```bash
-git clone https://github.com/VibhuA-ai/practice-round.git
-cd practice-round
+git clone https://github.com/VibhuA-ai/shiftscribe.git
+cd shiftscribe
 cp .env.example .env        # then put your Anthropic API key in .env
 npm start                   # open http://localhost:3000
 ```
